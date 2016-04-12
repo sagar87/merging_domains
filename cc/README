@@ -1,0 +1,18 @@
+README
+
+
+Implementation of connected components using a quickfind array has the advantage representing
+the graph in very sparse representation. To run cc.py on your graph make sure that it has
+the following format
+
+<incoming node>	<terminal node>	<edgeweight>
+
+The cc.py procedure will yield the same graph with an annotation of the component in the first
+column of the graph file.
+
+<component>	<initial_node>	<terminal_node>	<edge_weigt>
+
+For further processing of the data it might be useful to sort the edges with respect to their
+components. This can be done easily in Unix systems by invoking the sort command:
+
+sort -n -k 2 unsorted_graph.dat > sorted_graph.dat
